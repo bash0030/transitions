@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+  line-height: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+  padding: 1rem 2rem;
+}
+
+header h1 {
+  font-size: 2.4rem;
+}
+
+main {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 10px solid #aaa;
+}
+
+.card {
+  border: 1px solid hsl(220deg, 50%, 60%);
+  position: relative;
+  overflow: hidden;
+  background-color: hsl(220deg, 30%, 80%);
+  transform: skewY(-10deg) scaleY(1) scaleX(1);
+}
+.card:hover {
+  transform: skewY(-25deg) scaleY(1.5) scaleX(1.2);
+  transition-timing-function: ease;
+  transition-property:all;
+  transition-property: transform;
+  background:hsla(27, 62%, 77%, 1); 
+  transition-duration: 2s;
+ 
+}
+
+.name {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: hsl(220deg, 50%, 60%);
+  color: hsl(220deg, 0%, 95%);
+  text-align: center;
+ /* transition: transform 3s;*/
+}
+/*.name:hover {
+  transform: scale(2);
+  background-color:hsla(329, 62%, 33%, 1);
+}*/
+
+.avatar {
+  text-align: center;
+  padding: 0.5rem;
+  transform: skewX(25deg);
+ /* transition: transform 5s;*/
+}
+/*.avatar:hover {
+  transform: skewX(15px);
+  
+ 
+}*/
+
+.avatar img {
+  border: 0.25rem solid hsl(80deg, 50%, 70%);
+  border-radius: 50%;
+}
+
+.contact {
+  font-size: 0.6rem;
+  padding: 0.5rem 1rem;
+  color: hsl(220deg, 30%, 50%);
+}
+
+.email {
+  transform-origin: left top;
+  /*transition: transform 2.5s;*/
+}
+/*.email:hover{
+  transform: rotate(75deg);
+}*/
+
+.cell {
+  transform: rotate(5deg) scale(1) translateY(-15%) translateX(30%);
+  /*transition: transform 1.5s;*/
+}
+/*.cell:hover {
+  transform: rotate(10deg) scale(1) translateY(-10%) translateX(20%);
+  background:hsla(8, 62%, 89%, 1);
+}*/
+.avatars {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(80deg, 20%, 90%);
+  padding: 0.5rem;
+}
+
+.icon-wrapper {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
