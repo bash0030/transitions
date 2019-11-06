@@ -50,12 +50,12 @@ main {
   background-color: hsl(220deg, 50%, 60%);
   color: hsl(220deg, 0%, 95%);
   text-align: center;
- /* transition: transform 3s;*/
+  transition: transform 3s;
 }
-/*.name:hover {
+.name:hover {
   transform: scale(2);
   background-color:hsla(329, 62%, 33%, 1);
-}*/
+}
 
 .avatar {
   text-align: center;
